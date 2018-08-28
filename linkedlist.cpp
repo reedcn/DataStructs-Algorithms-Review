@@ -65,7 +65,7 @@ class linked {
 			temp = head; // Set current node to first node
 			
 			while (temp != NULL) { // While current node is not NULL
-				cout << temp-> data << endl; // Print
+				cout << "Item in Linked List: " << temp-> data << endl; // Print
 				temp = temp->next; // Set temp to next node
 			}
 		}
