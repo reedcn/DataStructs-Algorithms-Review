@@ -12,9 +12,10 @@ void showStack(stack<int> &stackRef) { // Function for displaying stack
     stack<int> copy = stackRef; // Create a copy of the stack to pop off the elements, while keeping original intact.
     while (!copy.empty())
     {
-        cout << copy.top() << " "; // Print item located at the top of the stack.
+        cout << "Stack contains: " << copy.top() << " "; // Print item located at the top of the stack.
         copy.pop(); // Remove item off the top of the stack.
     }
+	cout << "\n";
 }
 
 int main() {
@@ -29,6 +30,12 @@ int main() {
 	example.pop();
 	
 	showStack(example); // Display items on the stack
+	
+	if (example.empty()) {
+		cout << "Stack is empty.";
+	} else {
+		cout << "Stack is not empty.";
+	}
 	
 	return 0;
 }
