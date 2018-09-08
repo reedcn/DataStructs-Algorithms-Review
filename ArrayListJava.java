@@ -1,3 +1,8 @@
+/*Christine Reed
+ArrayList
+9/4/2018
+Language: Java*/
+
 import java.util.ArrayList;
 import java.util.List;
 
